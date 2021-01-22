@@ -1,3 +1,4 @@
+// https://github.com/Shanjida90/Assignment3-JS
 function kilometerToMeter(kilometer) {
     var meter = 0;
     if (kilometer == 1) {
@@ -12,25 +13,27 @@ function kilometerToMeter(kilometer) {
     return meter;
 
 }
-var count = kilometerToMeter(9);
-console.log(count);
+// var count = kilometerToMeter(9);
+// console.log(count);
 
 
 // Budget calculation
-// function budgetCalculator(watch, phone, laptop) {
-//     var totalBudget = 0;
-//     if (watch <= 10) {
-//         var watchPrice = 50 * 10;
-//         totalBudget = watchPrice;
-//     } else if (phone <= 10 && laptop <= 10) {
-//         var phonePrice = 100 * 10;
-//         var laptopPrice = 500 * 10;
-//         var togetherPrice = phonePrice + laptopPrice;
-//         totalBudget = togetherPrice + watchPrice;
-//     }
-//     return totalBudget;
-// }
-// var allprice = budgetCalculator(10);
+
+function budgetCalculation(watch, phone, laptop) {
+    var totalSum = 0;
+    if (watch <= 10) {
+        var firstThing = 10 * 50;
+    } else if (phone <= 10) {
+        var secondThing = 10 * 100;
+    } else if (laptop <= 10) {
+        var thirdThing = 10 * 500;
+        var totalSum = firstThing + secondThing + thirdThing;
+
+    }
+    return totalSum;
+}
+var cost = budgetCalculation();
+console.log(cost);
 //( hotelcost )
 function hotelCost(night) {
     var totalCost = 0;
@@ -52,7 +55,8 @@ function hotelCost(night) {
     return totalCost;
 
 }
-var count = hotelCost(30);
+// var count = hotelCost(30);
+// console.log(count);
 
 
 // megaFriend
@@ -68,4 +72,5 @@ function megaFriend(names) {
     }
     return largest;
 }
-var result = megaFriend(["shanjida", "rumi", "sumi", "sagor"]);
+// var result = megaFriend(["shanjida", "rumi", "sumi", "sagor"]);
+// console.log("The largest name is:", result);
